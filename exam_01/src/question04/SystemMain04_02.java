@@ -19,11 +19,13 @@ public class SystemMain04_02 {
 				oddIndex++;				
 			}
 		}
-		System.out.println(evenArray[2]);
+	
 		
 		
-		if(evenArray[evenIndex] % 2 == 0) {
-			System.out.println("個目の要素:"+  evenArray[evenIndex]);
+		for (int j = 1; j <= 25; j++) {
+			if(j % 2 == 0) {
+				System.out.println(j + "個目の要素:" + evenArray[j]);
+			}
 		}
 		 
 		
