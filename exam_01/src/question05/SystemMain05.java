@@ -15,19 +15,20 @@ public class SystemMain05 {
 		
 		String name = reader.readLine();
 		
-		studentA.getName = name;
+		studentA.setName(name);
 						
 		System.out.println("studentA の年齢を入力してください。");
 			
 		String str = reader.readLine();
 		int age = Integer.parseInt(str);
 		
-		Student05 studentB = new Student05();
-		studentB.setName();
-		studentB.setAge();
+		studentA.setAge(age);
+		Student05 studentB = new Student05("渡邊", 22);
 		
-		System.out.println("studentA の名前は"+ name + "年齢は" + age + "歳です");
-		System.out.println("Student05 クラスで生成したオブジェクトの数は" + totalStudent + "です。");
+		
+		System.out.println("studentA の名前は"+ studentA.getName() + "、年齢は" + studentB.getAge() + "歳です");
+		System.out.println("studentB の名前は"+ studentB.getName() + "、年齢は" + studentB.getAge() + "歳です");
+		System.out.println("Student05 クラスで生成したオブジェクトの数は" + Student05.getTotalStudent() + "です。");
 				
 				
 				
