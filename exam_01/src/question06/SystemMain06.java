@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 public class SystemMain06 {
 
 	public static void main(String[] args) throws IOException {
+		//SmartPhone06オブジェクトを生成
 		SmartPhone06 phoneA = new SmartPhone06();
 		
 		System.out.println("電話番号を入力してください。");
@@ -19,6 +20,7 @@ public class SystemMain06 {
 		String str = reader.readLine();
 		int fee = Integer.parseInt(str);
 		
+		//phoneNumber,feeをphoneAのフィールドに格納
 		phoneA.setPhoneNumber(phoneNumber);
 		phoneA.setFee(fee);
 		
@@ -27,8 +29,10 @@ public class SystemMain06 {
 		String str2 = reader.readLine();
 		double internetSpeed = Double.parseDouble(str2);
 		
+		//phoneAのフィールドに格納
 		phoneA.setInternetSpeed(internetSpeed);
 		
+		//phoneBのオブジェクトを生成
 		SmartPhone06 phoneB = new SmartPhone06();
 		
 		phoneA.showInfo();
