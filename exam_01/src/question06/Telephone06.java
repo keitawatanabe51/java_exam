@@ -2,9 +2,9 @@ package question06;
 
 public class Telephone06 {
 	//**電話番号*/
-	String phoneNumber;
+	protected String phoneNumber;
 	//*料金*/
-	int fee;
+	protected int fee;
 	
 	/**
 	 * 電話番号を取得
@@ -47,7 +47,7 @@ public class Telephone06 {
 	 */
 	public void showInfo() {
 		System.out.println("Telephone06 クラスで格納されている電話番号は"
-			+ this.phoneNumber + "で、料金は" + this.fee + "円です。");
+			+ phoneNumber + "で、料金は" + fee + "円です。");
 	}
 	
 }

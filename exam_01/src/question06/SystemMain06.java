@@ -7,6 +7,12 @@ import java.io.InputStreamReader;
 public class SystemMain06 {
 
 	public static void main(String[] args) throws IOException {
+		
+		String phoneNumber;
+		int fee;
+		double internetSpeed;
+		
+		
 		//SmartPhone06オブジェクトを生成
 		SmartPhone06 phoneA = new SmartPhone06();
 		
@@ -14,11 +20,11 @@ public class SystemMain06 {
 		
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		
-		String phoneNumber = reader.readLine();
+		phoneNumber = reader.readLine();
 		
 		System.out.println("料金を入力してください。");
 		String str = reader.readLine();
-		int fee = Integer.parseInt(str);
+		 fee = Integer.parseInt(str);
 		
 		//phoneNumber,feeをphoneAのフィールドに格納
 		phoneA.setPhoneNumber(phoneNumber);
@@ -27,7 +33,7 @@ public class SystemMain06 {
 		System.out.println("通信速度を入力してください。");
 		
 		String str2 = reader.readLine();
-		double internetSpeed = Double.parseDouble(str2);
+		internetSpeed = Double.parseDouble(str2);
 		
 		//phoneAのフィールドに格納
 		phoneA.setInternetSpeed(internetSpeed);
@@ -38,9 +44,9 @@ public class SystemMain06 {
 		phoneA.showInfo();
 		phoneB.showInfo();
 		
-		boolean judge = phoneA.equals(phoneB);
 		
-		if (judge) {
+		
+		if (phoneA.equals(phoneB)) {
 			System.out.println("同じオブジェクトを参照しています。");
 		}else {
 			System.out.println("違うオブジェクトです。");

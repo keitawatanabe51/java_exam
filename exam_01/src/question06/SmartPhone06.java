@@ -3,7 +3,7 @@ package question06;
 public class SmartPhone06 extends Telephone06 {
 	
 	/**通信速度*/
-	double internetSpeed;
+	private double internetSpeed;
 	
 	/**
 	 * 	通信速度を取得
@@ -30,7 +30,7 @@ public class SmartPhone06 extends Telephone06 {
 	public void showInfo() {
 		super.showInfo();
 		System.out.println("SmartPhone06 クラスで格納されている通信速度は" +
-			this.internetSpeed + "Mbps です。");
+			internetSpeed + "Mbps です。");
 	}
 	
 }
